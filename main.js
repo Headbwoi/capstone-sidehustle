@@ -160,4 +160,9 @@ form.addEventListener('submit', e => {
       }
     })
   }
+
+
+  if ((uInput.classList.contains("success")) && (eInput.classList.contains('success')) && (cInput.classList.contains('success')) && (gMaleInput.checked || gFemaleInput.checked)) {
+    window.location.href = form.getAttribute("action");
+  }
 })
