@@ -1,0 +1,13 @@
+{
+  "name": "capstone-two",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx tailwindcss -i src/input.css -o public/form.css --watch",
+    "prod": "npx tailwindcss -i src/input.css -o public/form.css --minify"
+  },
+  "keywords": [],
+  "author": "Tochukwu",
+  "license": "ISC"
+}

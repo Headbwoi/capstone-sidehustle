@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Capstone 2</title>
+
+    <!-- HTML -->
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="public/style.css" />
+    <link rel="stylesheet" href="public/form.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a class="nav-logo" href="#">Capstone 2</a>
+
+          <div class="nav-menu mob-hide">
+            <span><a href="#">Home</a></span>
+            <span><a href="#">About</a></span>
+            <span><a href="#">Skills</a></span>
+            <span><a href="#">Services</a></span>
+            <span><a href="#">Contact</a></span>
+          </div>
+
+          <div class="mobile-toggle desk-hide" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+
+        <div class="mobile-menu desk-hide" id="mob-menu">
+          <span><a href="#home">Home</a></span>
+          <span><a href="#">About</a></span>
+          <span><a href="#">Skills</a></span>
+          <span><a href="#">Services</a></span>
+          <span><a href="#">Contact</a></span>
+        </div>
+      </div>
+    </header>
+
+    <main
+      class="flex items-center justify-center min-h-screen bg-black py-[4rem] px-3"
+    >
+      <form
+        class="form bg-formBackground rounded-2xl max-w-[350px] w-full p-5"
+        id="form"
+      >
+        <div>
+          <h1 class="text-4xl text-textLabelHeading mb-10">Sign up</h1>
+        </div>
+
+        <div class="form-input w-full mb-5 user">
+          <label
+            class="block text-textLabelHeading text-sm tracking-wide mb-1"
+            for="Username"
+            >Username</label
+          >
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your Username"
+            class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white"
+          />
+          <div class="errortxt text-red-600 text-sm mt-2 -mb-3 ml-3"></div>
+        </div>
+
+        <div class="form-input w-full mb-5 email">
+          <label
+            class="block text-textLabelHeading text-sm tracking-wide mb-1"
+            for="Email"
+            >Email</label
+          >
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white"
+          />
+          <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
+        </div>
+
+        <div class="form-input w-full mb-5 pass">
+          <label
+            class="block text-textLabelHeading text-sm tracking-wide mb-1"
+            for="Password"
+            >Password</label
+          >
+          <input
+            type="password"
+            id="password"
+            placeholder="Enter your Password"
+            class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white"
+          />
+          <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
+        </div>
+
+        <div class="form-input w-full mb-5 pass2">
+          <label
+            class="block text-textLabelHeading text-sm tracking-wide mb-1"
+            for="Password"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            id="password2"
+            placeholder="Confirm password"
+            class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white"
+          />
+          <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
+        </div>
+
+        <div class="form-input w-full mb-5 gender">
+          <label
+            class="block text-textLabelHeading text-sm tracking-wide mb-2"
+            for="Gender"
+            >Select your Gender</label
+          >
+          <!-- gender buttons one -->
+          <div class="mb-3 male-check">
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                class="hidden appearance-none invisible"
+                id="malebtn"
+              />
+              <span class="check relative block w-5 h-5 bg-formBackground border-lightPurple border-2 cursor-pointer p-1 rounded-full mr-5"></span>
+              <span class="text-white">Male</span>
+            </label>
+          </div>
+          <!-- gender buttons two-->
+          
+          <div class="female-check">
+            <label class="flex items-center">
+              <input
+                type="checkbox"
+                class="hidden appearance-none invisible"
+                id="femalebtn"
+              />
+              <span class="check relative block w-5 h-5 bg-formBackground border-lightPurple border-2 cursor-pointer p-1 rounded-full mr-5"></span>
+              <span class="text-white">Female</span>
+            </label>
+          </div>
+
+          <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
+        </div>
+
+        <div class="submit mt-8">
+          <button
+            type="submit"
+            class="bg-lightPurple text-textLabelHeading w-full p-3 rounded-xl outline-none border-none tracking-[1px]"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.form-input input.error {
+  border-color: #e10202;
+}
+.form-input input.success {
+  border-color: #689935;
+}
+input[type="checkbox"]:checked ~ .check{
+  background-color: #323;
+}

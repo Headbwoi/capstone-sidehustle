@@ -1,0 +1,140 @@
+html{
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body{
+  background: #222;
+}
+.container{
+  margin: 0 auto;
+}
+@media (min-width: 640px) {
+  .container{
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .container{
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .container{
+    max-width: 1024px;
+  }
+}
+header{
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 5px 20px;
+  overflow-x: hidden;
+}
+a{
+  text-decoration: none;
+}
+nav a{
+  color:#fff;
+  text-transform: uppercase;
+}
+nav .nav-logo{
+  font-size: 20px;
+}
+
+nav .nav-menu span:not(:last-child){
+  margin-right: 2rem;  
+}
+span a{
+  position: relative;
+  cursor: pointer;
+}
+span a::after{
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: red;
+  display: block;
+  transform: scale(0);
+  transform-origin: left;
+  transition: all .5s ease;
+}
+span:hover a::after{
+  transform: scale(1);
+}
+nav .nav-menu span a{
+    font-size: 16px;
+}
+nav .mobile-toggle{
+  cursor: pointer;
+}
+nav .mobile-toggle span{
+  display: block;
+  height: 2px;
+  width: 25px;
+  background: #fff;
+  transform-origin: 2.5px;
+  transition: .7s ease;
+  cursor: pointer;
+}
+nav .mobile-toggle span:not(:last-child){
+  margin-bottom: 5px;
+}
+nav .mobile-toggle.open span:first-child{
+  transform: rotate(45deg);
+}
+nav .mobile-toggle.open span:nth-child(2){
+  opacity: 0;
+}
+nav .mobile-toggle.open span:last-child{
+  transform: rotate(-45deg);
+}
+
+.mobile-menu{
+  position: absolute;
+  top: 3.75rem;
+  left: 0;
+  width: 100%;
+  display: block;
+  transform: translateX(-100%);
+  background-color: #222;
+  padding: 20px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.mobile-menu.show{
+  transform: translateX(0);
+}
+.mobile-menu span{
+  display: block;
+  text-align: center;
+}
+.mobile-menu span a{
+  color: #fff;
+}
+.mobile-menu span:not(:last-child){
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 767px) {
+  .mob-hide{
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .desk-hide{
+    display: none;
+  }
+}
