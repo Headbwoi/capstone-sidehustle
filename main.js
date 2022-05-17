@@ -166,3 +166,25 @@ form.addEventListener('submit', e => {
     window.location.href = form.getAttribute("action");
   }
 })
+
+const passToggle = document.querySelector(".togglepass")
+const confirmToggle = document.querySelector(".toggleconfirm")
+
+passToggle.addEventListener("click", () => {
+  if(pInput.type === "password"){
+    pInput.type = "text"
+    passToggle.classList.replace("fa-eye", "fa-eye-slash")
+  }else{
+    pInput.type = "password"
+    passToggle.classList.replace("fa-eye-slash", "fa-eye")
+  }
+})
+confirmToggle.addEventListener("click", () => {
+  if(cInput.type === "password"){
+    cInput.type = "text"
+    confirmToggle.classList.replace("fa-eye", "fa-eye-slash")
+  }else{
+    cInput.type = "password"
+    confirmToggle.classList.replace("fa-eye-slash", "fa-eye")
+  }
+})

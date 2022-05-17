@@ -10,6 +10,7 @@
     <!-- HTML -->
 
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="public/style.css" />
     <link rel="stylesheet" href="public/form.css" />
   </head>
@@ -87,7 +88,7 @@
           <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
         </div>
 
-        <div class="form-input w-full mb-5 pass">
+        <div class="form-input w-full mb-5 pass relative">
           <label
             class="block text-textLabelHeading text-sm tracking-wide mb-1"
             for="Password"
@@ -97,12 +98,13 @@
             type="password"
             id="password"
             placeholder="Enter your Password"
-            class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white"
+            class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white relative"
           />
+          <i class="fa fa-eye absolute top-1/2 right-5 cursor-pointer togglepass"></i>
           <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
         </div>
 
-        <div class="form-input w-full mb-5 pass2">
+        <div class="form-input w-full mb-5 pass2 relative">
           <label
             class="block text-textLabelHeading text-sm tracking-wide mb-1"
             for="Password"
@@ -114,6 +116,7 @@
             placeholder="Confirm password"
             class="bg-formBackground text-white w-full p-4 outline-none border border-solid border-lightPurple rounded-xl duration-200 transition-all ease-in-out focus:placeholder:text-white"
           />
+          <i class="fa fa-eye absolute top-1/2 right-5 cursor-pointer toggleconfirm"></i>
           <div class="errortxt text-red-600 text-sm mt-1 -mb-2 ml-2"></div>
         </div>
 
